@@ -1,0 +1,5 @@
+python -m venv venv
+.\venv\Scripts\activate.bat
+pip install flask
+cd C:\Users\owner\OneDrive - The University of Hong Kong - Connect\Desktop\ENGG1340 gp\Restaurant-reservation-system
+python microblog.py
