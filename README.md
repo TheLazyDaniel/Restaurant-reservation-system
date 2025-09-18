@@ -1,7 +1,7 @@
 # Flask-Tutorial
 Learn flask tutorial from https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 Trying to make a restaurant reservation system
-# 1. Start when pulling the code to your own VS code
+# 1. Start by pulling the code to your own VS code
 # 2. Create virtual environment:
 python -m venv venv
 # 3. Activate virtual environment (for VS code terminal Window):
