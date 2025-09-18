@@ -3,7 +3,17 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-    return "Hello, World!"
+    user = {'username': 'Daniel'}
+    return '''
+<html>
+    <head>
+        <title>Hello page-Small Restaurant Rev.</title>
+    </head>
+    <body>
+        <h1>Hello, ''' + user['username'] + '''</h1>
+    </body
+</html>
+'''
 
 @app.route('/CS')      # /CS → Study Flask
 def CS():          
