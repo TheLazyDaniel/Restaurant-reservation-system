@@ -1,23 +1,16 @@
+from flask import render_template
 from app import app
 
 @app.route('/')
 @app.route('/index')
 def index():
-    user = {'username': 'Daniel'}
-    return '''
-<html>
-    <head>
-        <title>Hello page-Small Restaurant Rev.</title>
-    </head>
-    <body>
-        <h1>Hello, ''' + user['username'] + '''</h1>
-    </body
-</html>
-'''
+    user = {'username': 'Daniel','age': 19}
+    return render_template('example1.html', title = 'Home', user = user)
 
-@app.route('/CS')      # /CS → Study Flask
+@app.route('/notitle')      
 def CS():          
-    return "study flask!"  
+    user = {'username': 'Daniel','age': 19}
+    return render_template('example2.html', user = user)
 
 @app.route('/ME')      # /ME → Study Solidworks
 def ME():          
